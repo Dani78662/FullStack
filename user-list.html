@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="">
+
+    <title>ARM STORE</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.materialdesignicons.com/4.4.95/css/materialdesignicons.min.css" rel="stylesheet" />
+    <!-- CSS -->
+    <link id="ekka-css" rel="stylesheet" href="index.css" />
+    <!-- FAVICON -->
+	<link href="assets/img/icons/shooting.png" rel="shortcut icon" />
+</head>
+
+<body class="ec-header-fixed ec-sidebar-fixed ec-sidebar ec-header" id="body">
+
+    <!--  WRAPPER  -->
+    <div class="wrapper">
+
+        <!-- LEFT MAIN SIDEBAR -->
+        <div class="ec-left-sidebar ec-bg-sidebar" style="background-color: #262626;">
+            <div id="sidebar" class="sidebar ec-sidebar-footer">
+
+                <div class="ec-brand">
+                    <a href="admin.html" title="">
+						<span class="ec-brand-name text-truncate" style="color:white ;">ARM</span><span class="ec-brand-name text-truncate" style="color: #FFD700"> STORE</span>
+					</a>
+                </div>
+
+                <!-- begin sidebar scrollbar -->
+                <div class="ec-navigation" data-simplebar>
+                    <!-- sidebar menu -->
+                    <ul class="nav sidebar-inner" id="sidebar-menu">
+                        <!-- Dashboard -->
+                        <li class="">
+                            <a class="sidenav-item-link" href="admin.html">
+                                <i class="mdi mdi-view-dashboard-outline"></i>
+                                <span class="nav-text">Dashboard</span>
+                            </a>
+                            <hr>
+                        </li>
+
+                        <!-- Vendors -->
+                        <li class="has-sub">
+                            <a class="sidenav-item-link" href="vendor-grid.html">
+                                <i class="mdi mdi-account-group-outline"></i>
+                                <span class="nav-text">Vendors</span> <b class="caret"></b>
+                            </a>							<hr>
+
+                        </li>
+
+                        <!-- Users -->
+                        <li class="has-sub">
+                            <a class="sidenav-item-link" href="user-list.html">
+                                <i class="mdi mdi-account-group"></i>
+                                <span class="nav-text">Users</span> <b class="caret"></b>
+                            </a>							<hr>
+
+                        </li>
+
+                        <!-- Products -->
+                        <li class="has-sub">
+                            <a class="sidenav-item-link" href="javascript:void(0)">
+                                <i class="mdi mdi-palette-advanced"></i>
+                                <span class="nav-text">Products</span> <b class="caret"></b>
+                            </a>
+                            <div class="collapse">
+                                <ul class="sub-menu" id="products" data-parent="#sidebar-menu">
+                                    <li class="">
+                                        <a class="sidenav-item-link" href="addproduct.html">
+                                            <span class="nav-text">Add Product</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a class="sidenav-item-link" href="productlist.html">
+                                            <span class="nav-text">List Product</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>							<hr>
+
+                        </li>
+
+                        <!-- Orders -->
+                        <li class="has-sub">
+                            <a class="sidenav-item-link" href="javascript:void(0)">
+                                <i class="mdi mdi-cart"></i>
+                                <span class="nav-text">Orders</span> <b class="caret"></b>
+                            </a>
+                            <div class="collapse">
+                                <ul class="sub-menu" id="orders" data-parent="#sidebar-menu">
+                                    <li class="">
+                                        <a class="sidenav-item-link" href="orderlist.html">
+                                            <span class="nav-text">Order Lists</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a class="sidenav-item-link" href="orderdetail.html">
+                                            <span class="nav-text">Order Detail</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>							<hr>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!--  PAGE WRAPPER -->
+        <div class="ec-page-wrapper">
+
+            <!-- Header -->
+            <header class="ec-main-header" id="header">
+                <nav class="navbar navbar-static-top navbar-expand-lg" style="background-color: #262626;">
+                    <!-- Sidebar toggle button -->
+                    <button id="sidebar-toggler" class="sidebar-toggle"></button>
+                    <!-- search form -->
+                    <div class="gap d-lg-inline-block">
+                    </div>
+
+                    <!-- navbar right -->
+                    <div class="navbar-right">
+                        <ul class="nav navbar-nav">
+                            <!-- User Account -->
+                            <li class="right-sidebar-in right-sidebar-2-menu">
+                            <li class="dropdown user-menu">
+                                <button class="dropdown-toggle nav-link ec-drop" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="assets/img/user/u6.jpg" class="user-image" alt="User Image" />
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right ec-dropdown-menu">
+                                    <!-- User image -->
+                                    <li class="dropdown-header" style="background-color: yellow;">
+                                        <img src="assets/img/user/u6.jpg" class="img-circle" alt="User Image" />
+                                        <div class="d-inline-block">
+                                            Danish Rizwan <small class="pt-1">danishrizwan@gmail.com</small>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="mdi mdi-account"></i> My Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="mdi mdi-email"></i> Message
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <i class="mdi mdi-diamond-stone"></i> Projects </a>
+                                    </li>
+                                    <li class="right-sidebar-in">
+                                        <a href="javascript:0"> <i class="mdi mdi-settings-outline"></i> Setting </a>
+                                    </li>
+                                    <li class="dropdown-footer">
+                                        <a href="#"> <i class="mdi mdi-logout"></i> Log Out </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- CONTENT WRAPPER -->
+            <div class="ec-content-wrapper ec-ec-content-wrapper mb-m-24px">
+                <div class="content">
+                    <div class="breadcrumb-wrapper breadcrumb-contacts">
+                        <div>
+                            <h1>Users</h1>
+                            <p class="breadcrumbs"><span><a href="index.html">Home</a></span>
+                                <span><i class="mdi mdi-chevron-right"></i></span>Users
+                            </p>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modal-add-contact"> Add User
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-4 mb-24px">
+                            <div class="ec-user-card card card-default p-4">
+                                <a href="javascript:0" data-bs-toggle="modal" data-bs-target="#modalContact"
+                                    class="view-detail"><i class="mdi mdi-eye-plus-outline"></i>
+                                </a>
+                                <a href="javascript:0" class="media text-secondary">
+                                    <img src="assets/img/user/u4.jpg" class="mr-3 img-fluid" alt="Avatar Image">
+
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-2 text-dark">Emma Smith</h5>
+
+                                        <ul class="list-unstyled">
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-email mr-1"></i>
+                                                <span>exmaple@email.com</span>
+                                            </li>
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-phone mr-1"></i>
+                                                <span>(123) 888 777 632</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-xl-4 mb-24px">
+                            <div class="ec-user-card card card-default p-4">
+                                <a href="javascript:0" data-bs-toggle="modal" data-bs-target="#modalContact"
+                                    class="view-detail"><i class="mdi mdi-eye-plus-outline"></i>
+                                </a>
+                                <a href="javascript:0" class="media text-secondary">
+                                    <img src="assets/img/user/u4.jpg" class="mr-3 img-fluid" alt="Avatar Image">
+
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-2 text-dark">John Smith</h5>
+
+                                        <ul class="list-unstyled">
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-email mr-1"></i>
+                                                <span>exmaple@email.com</span>
+                                            </li>
+
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-phone mr-1"></i>
+                                                <span>(123) 888 777 632</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-xl-4 mb-24px">
+                            <div class="ec-user-card card card-default p-4">
+                                <a href="javascript:0" data-bs-toggle="modal" data-bs-target="#modalContact"
+                                    class="view-detail"><i class="mdi mdi-eye-plus-outline"></i>
+                                </a>
+                                <a href="javascript:0" class="media text-secondary">
+                                    <img src="assets/img/user/u4.jpg" class="mr-3 img-fluid" alt="Avatar Image">
+
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-2 text-dark">Mike Tison</h5>
+
+                                        <ul class="list-unstyled">
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-email mr-1"></i>
+                                                <span>exmaple@email.com</span>
+                                            </li>
+
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-phone mr-1"></i>
+                                                <span>(123) 888 777 632</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-xl-4 mb-24px">
+                            <div class="ec-user-card card card-default p-4">
+                                <a href="javascript:0" data-bs-toggle="modal" data-bs-target="#modalContact"
+                                    class="view-detail"><i class="mdi mdi-eye-plus-outline"></i>
+                                </a>
+                                <a href="javascript:0" class="media text-secondary">
+                                    <img src="assets/img/user/u4.jpg" class="mr-3 img-fluid" alt="Avatar Image">
+
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-2 text-dark">Jack Sparrow</h5>
+
+                                        <ul class="list-unstyled">
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-email mr-1"></i>
+                                                <span>exmaple@email.com</span>
+                                            </li>
+
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-phone mr-1"></i>
+                                                <span>(123) 888 777 632</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-xl-4 mb-24px">
+                            <div class="ec-user-card card card-default p-4">
+                                <a href="javascript:0" data-bs-toggle="modal" data-bs-target="#modalContact"
+                                    class="view-detail"><i class="mdi mdi-eye-plus-outline"></i>
+                                </a>
+                                <a href="javascript:0" class="media text-secondary">
+                                    <img src="assets/img/user/u4.jpg" class="mr-3 img-fluid" alt="Avatar Image">
+
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-2 text-dark">Mariya Martin</h5>
+
+                                        <ul class="list-unstyled">
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-email mr-1"></i>
+                                                <span>exmaple@email.com</span>
+                                            </li>
+
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-phone mr-1"></i>
+                                                <span>(123) 888 777 632</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-xl-4 mb-24px">
+                            <div class="ec-user-card card card-default p-4">
+                                <a href="javascript:0" data-bs-toggle="modal" data-bs-target="#modalContact"
+                                    class="view-detail"><i class="mdi mdi-eye-plus-outline"></i>
+                                </a>
+                                <a href="javascript:0" class="media text-secondary">
+                                    <img src="assets/img/user/u4.jpg" class="mr-3 img-fluid" alt="Avatar Image">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-2 text-dark">Volverin Wolker</h5>
+
+                                        <ul class="list-unstyled">
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-email mr-1"></i>
+                                                <span>exmaple@email.com</span>
+                                            </li>
+
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-phone mr-1"></i>
+                                                <span>(123) 888 777 632</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-xl-4 mb-24px">
+                            <div class="ec-user-card card card-default p-4">
+                                <a href="javascript:0" data-bs-toggle="modal" data-bs-target="#modalContact"
+                                    class="view-detail"><i class="mdi mdi-eye-plus-outline"></i>
+                                </a>
+                                <a href="javascript:0" class="media text-secondary">
+                                    <img src="assets/img/user/u4.jpg" class="mr-3 img-fluid" alt="Avatar Image">
+
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-2 text-dark">Molla Hajim</h5>
+
+                                        <ul class="list-unstyled">
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-email mr-1"></i>
+                                                <span>exmaple@email.com</span>
+                                            </li>
+
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-phone mr-1"></i>
+                                                <span>(123) 888 777 632</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-xl-4 mb-24px">
+                            <div class="ec-user-card card card-default p-4">
+                                <a href="javascript:0" data-bs-toggle="modal" data-bs-target="#modalContact"
+                                    class="view-detail"><i class="mdi mdi-eye-plus-outline"></i>
+                                </a>
+                                <a href="javascript:0" class="media text-secondary">
+                                    <img src="assets/img/user/u4.jpg" class="mr-3 img-fluid" alt="Avatar Image">
+
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-2 text-dark">Jenny Smith</h5>
+
+                                        <ul class="list-unstyled">
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-email mr-1"></i>
+                                                <span>exmaple@email.com</span>
+                                            </li>
+
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-phone mr-1"></i>
+                                                <span>(123) 888 777 632</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-xl-4 mb-24px">
+                            <div class="ec-user-card card card-default p-4">
+                                <a href="javascript:0" data-bs-toggle="modal" data-bs-target="#modalContact"
+                                    class="view-detail"><i class="mdi mdi-eye-plus-outline"></i>
+                                </a>
+                                <a href="javascript:0" class="media text-secondary">
+                                    <img src="assets/img/user/u4.jpg" class="mr-3 img-fluid" alt="Avatar Image">
+
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-2 text-dark">Moni Vakazu</h5>
+
+                                        <ul class="list-unstyled">
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-email mr-1"></i>
+                                                <span>exmaple@email.com</span>
+                                            </li>
+
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-phone mr-1"></i>
+                                                <span>(123) 888 777 632</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-xl-4 mb-24px">
+                            <div class="ec-user-card card card-default p-4">
+                                <a href="javascript:0" data-bs-toggle="modal" data-bs-target="#modalContact"
+                                    class="view-detail"><i class="mdi mdi-eye-plus-outline"></i>
+                                </a>
+                                <a href="javascript:0" class="media text-secondary">
+                                    <img src="assets/img/user/u4.jpg" class="mr-3 img-fluid" alt="Avatar Image">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-2 text-dark">Martin Lynda</h5>
+
+                                        <ul class="list-unstyled">
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-email mr-1"></i>
+                                                <span>exmaple@email.com</span>
+                                            </li>
+
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-phone mr-1"></i>
+                                                <span>(123) 888 777 632</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-xl-4 mb-24px">
+                            <div class="ec-user-card card card-default p-4">
+                                <a href="javascript:0" data-bs-toggle="modal" data-bs-target="#modalContact"
+                                    class="view-detail"><i class="mdi mdi-eye-plus-outline"></i>
+                                </a>
+                                <a href="javascript:0" class="media text-secondary">
+                                    <img src="assets/img/user/u4.jpg" class="mr-3 img-fluid" alt="Avatar Image">
+
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-2 text-dark">Boron Noise</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-email mr-1"></i>
+                                                <span>exmaple@email.com</span>
+                                            </li>
+
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-phone mr-1"></i>
+                                                <span>(123) 888 777 632</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-xl-4 mb-24px">
+                            <div class="ec-user-card card card-default p-4">
+                                <a href="javascript:0" data-bs-toggle="modal" data-bs-target="#modalContact"
+                                    class="view-detail"><i class="mdi mdi-eye-plus-outline"></i>
+                                </a>
+                                <a href="javascript:0" class="media text-secondary">
+                                    <img src="assets/img/user/u4.jpg" class="mr-3 img-fluid" alt="Avatar Image">
+
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-2 text-dark">Walvi Nekki</h5>
+
+                                        <ul class="list-unstyled">
+                                            <li class="d-flex mb-1">
+                                                <i class="mdi mdi-email mr-1"></i>
+                                                <span>exmaple@email.com</span>
+                                            </li>
+
+                                            <li class="d-flex">
+                                                <i class="mdi mdi-phone mr-1"></i>
+                                                <span>(123) 888 777 632</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Modal -->
+                    <div class="modal fade modal-contact-detail" id="modalContact" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-end border-bottom-0">
+                                    <button type="button" class="btn-edit-icon" data-bs-dismiss="modal"
+                                        aria-label="Close">
+                                        <i class="mdi mdi-pencil"></i>
+                                    </button>
+
+                                    <div class="dropdown">
+                                        <button class="btn-dots-icon" type="button" id="dropdownMenuButton"
+                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="mdi mdi-dots-vertical"></i>
+                                        </button>
+
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a class="dropdown-item" href="#">Remove</a>
+                                            <a class="dropdown-item" href="#">Disable</a>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn-close-icon" data-bs-dismiss="modal"
+                                        aria-label="Close">
+                                        <i class="mdi mdi-close"></i>
+                                    </button>
+                                </div>
+
+                                <div class="modal-body pt-0">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-6">
+                                            <div class="profile-content-left px-4">
+                                                <div class="text-center widget-profile px-0 border-0">
+                                                    <div class="card-img mx-auto rounded-circle">
+                                                        <img src="assets/img/user/u6.jpg" alt="user image">
+                                                    </div>
+
+                                                    <div class="card-body">
+                                                        <h4 class="py-2 text-dark">John Devilo</h4>
+                                                        <p>johnexample@gmail.com</p>
+                                                        <a class="btn btn-primary btn-pill my-4" href="#">Follow</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex justify-content-between ">
+                                                    <div class="text-center pb-4">
+                                                        <h6 class="text-dark pb-2">354</h6>
+                                                        <p>Bought</p>
+                                                    </div>
+
+                                                    <div class="text-center pb-4">
+                                                        <h6 class="text-dark pb-2">30</h6>
+                                                        <p>Wish List</p>
+                                                    </div>
+
+                                                    <div class="text-center pb-4">
+                                                        <h6 class="text-dark pb-2">1200</h6>
+                                                        <p>Following</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="contact-info px-4">
+                                                <h4 class="text-dark mb-1">User Details</h4>
+                                                <p class="text-dark font-weight-medium pt-4 mb-2">Email address</p>
+                                                <p>johnexample@gmail.com</p>
+                                                <p class="text-dark font-weight-medium pt-4 mb-2">Phone Number</p>
+                                                <p>+00 9539 2641 31</p>
+                                                <p class="text-dark font-weight-medium pt-4 mb-2">Birthday</p>
+                                                <p>Dec 10, 1991</p>
+                                                <p class="text-dark font-weight-medium pt-4 mb-2">Address</p>
+                                                <p>123/2, Kings fort street-2, Polo alto, US.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> <!-- End Content -->
+    </div> <!-- End Content Wrapper -->
+
+    </div> <!-- End Page Wrapper -->
+    </div> <!-- End Wrapper -->
+
+    <!-- Common Javascript -->
+	<script src="1.js"></script>
+	<script src="projects_assets_js_bootstrap.bundle.min.js"></script>
+	<!-- Custom -->
+	<script src="admin.js"></script>
+</body>
+
+</html>
